@@ -7,7 +7,7 @@ pause
 cls
     setlocal enableextensions disabledelayedexpansion
     set "search=http:\\www.boomlings.com/database"
-    set "replace=http:\\www.bccst.ru/gdks/database"
+    set "replace=ADRESSBASE"
 
     set "textFile=geometrydash.exe"
 
@@ -21,7 +21,7 @@ cls
     setlocal enableextensions disabledelayedexpansion
 
     set "search2=aHR0cDpcXHd3dy5ib29tbGluZ3MuY29tL2RhdGFiYXNl"
-    set "replace2=http:\\www.bccst.ru/gdks/database"
+    set "replace2=BASE64"
 
     set "textFile=geometrydash.exe"
 
@@ -35,5 +35,5 @@ mkdir gdserv
 echo press to start ftp copy server files to folder gdserv put winscp into the folder where this script is located
 pause
 cls
-App\winscp\WinSCP.com /open ftp://username:password@ip /command "put gdserv /database" /exit
+WinSCP.com /open ftp://username:password@ip /command "put gdserv /database" /exit
 pause
