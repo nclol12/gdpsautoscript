@@ -10,3 +10,5 @@ and change the word BASE64 to the base64 adress of your server
 
 Script By Notcher3#8385 on discord
 and on twitter @nclol3
+
+and also credits to WinScp for the Software that is included with the script
