@@ -5,35 +5,11 @@ cls
 echo make sure that you put geometrydash.exe into separate folder with this file
 pause 
 cls
-    setlocal enableextensions disabledelayedexpansion
-    set "search=http:\\www.boomlings.com/database"
-    set "replace=ADRESSBASE"
-
-    set "textFile=geometrydash.exe"
-
-    for /f "delims=" %%i in ('type "%textFile%" ^& break ^> "%textFile%" ') do (
-        set "line=%%i"
-        setlocal enabledelayedexpansion
-        >>"%textFile%" echo(!line:%search%=%replace%!
-        endlocal
-    )
-
-    setlocal enableextensions disabledelayedexpansion
-
-    set "search2=aHR0cDpcXHd3dy5ib29tbGluZ3MuY29tL2RhdGFiYXNl"
-    set "replace2=BASE64"
-
-    set "textFile=geometrydash.exe"
-
-    for /f "delims=" %%i in ('type "%textFile%" ^& break ^> "%textFile%" ') do (
-        set "line=%%i"
-        setlocal enabledelayedexpansion
-        >>"%textFile%" echo(!line:%search2%=%replace2%!
-        endlocal
-    )
+fnr.exe --cl --dir "Repy" --fileMask "*.*" --skipBinaryFileDetection --find "http://www.boomlings.com/database" --replace "ADRESSBASE"
+fnr.exe --cl --dir "Repy" --fileMask "*.*" --skipBinaryFileDetection --find "aHR0cDovL3d3dy5ib29tbGluZ3MuY29tL2RhdGFiYXNl" --replace "BASE64"
 mkdir gdserv
 echo press to start ftp copy server files to folder gdserv put winscp into the folder where this script is located
 pause
 cls
-WinSCP.com /open ftp://username:password@ip /command "put gdserv /database" /exit
+WinSCP.com /open ftp://gamer1111:7mplpass@host2.7m.pl /command "put gdserv cungdprivat/database" /exit
 pause
