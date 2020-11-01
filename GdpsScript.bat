@@ -11,5 +11,5 @@ mkdir gdserv
 echo press to start ftp copy server files to folder gdserv put winscp into the folder where this script is located
 pause
 cls
-WinSCP.com /open ftp://gamer1111:7mplpass@host2.7m.pl /command "put gdserv cungdprivat/database" /exit
+WinSCP.com /open ftp://username:password@ip /command "put gdserv database" /exit
 pause
