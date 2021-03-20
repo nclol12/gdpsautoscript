@@ -2,7 +2,8 @@
 echo Thx for using made by Notcher3#8385
 pause
 cls
-echo make sure that you put geometrydash.exe into separate folder with this file
+mkdir Repy
+echo make sure that you put geometrydash.exe into Repy folder
 pause 
 cls
 fnr.exe --cl --dir "Repy" --fileMask "*.*" --skipBinaryFileDetection --find "http://www.boomlings.com/database" --replace "ADRESSBASE"
