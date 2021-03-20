@@ -9,7 +9,7 @@ cls
 fnr.exe --cl --dir "Repy" --fileMask "*.*" --skipBinaryFileDetection --find "http://www.boomlings.com/database" --replace "ADRESSBASE"
 fnr.exe --cl --dir "Repy" --fileMask "*.*" --skipBinaryFileDetection --find "aHR0cDovL3d3dy5ib29tbGluZ3MuY29tL2RhdGFiYXNl" --replace "BASE64"
 mkdir gdserv
-echo press to start ftp copy server files to folder gdserv put winscp into the folder where this script is located
+echo Press any key to start ftp transfer. Copy server files to the folder gdserv.
 pause
 cls
 WinSCP.com /open ftp://username:password@ip /command "put gdserv database" /exit
