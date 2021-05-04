@@ -8,7 +8,7 @@ and change the word BASE64 to the base64 adress of your server
 
 
 
-shit By Notcher3#8385
+shit By Notcher3#8385 LICENSED UNDER ABOBA LICESE
 
 and also credits to WinScp(https://winscp.net/) for the Software that is included with the script
 And Credits to Fnr(http://findandreplace.io/) for the software that is included with the script
